@@ -22,7 +22,7 @@ function getNews(city = '') {
 function getFacts() {
     const date = new Date()
     const month = date.getMonth() + 1
-    const day = date.getDay()
+    const day = date.getDate()
     const url = `${FACTS_API_URL}/${month}/${day}`
     return got(url).text().catch(err => console.log(err))
 }

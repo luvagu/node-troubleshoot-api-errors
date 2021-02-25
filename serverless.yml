@@ -5,6 +5,7 @@ provider:
   runtime: nodejs12.x
   stage: dev
   region: us-east-1
+  memorySize: 1024
 
 functions:
   app:
@@ -18,4 +19,3 @@ functions:
           path: /{proxy+}
           method: ANY
           cors: true
-
