@@ -38,6 +38,6 @@ app.use('*', (req, res) => {
     res.status(404).send('Not Found')
 })
 
-// app.listen(5000, () => console.log('App listening on http://localhost:5000'))
+app.listen(5000, () => console.log('App listening on http://localhost:5000'))
 
 module.exports.handler = slsHttp(app)
